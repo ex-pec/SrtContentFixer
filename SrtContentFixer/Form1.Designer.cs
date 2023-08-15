@@ -29,31 +29,70 @@
         private void InitializeComponent()
         {
             button1 = new Button();
+            button2 = new Button();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(369, 112);
+            button1.Location = new Point(27, 51);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(75, 43);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Dosyalari Kontrol Et";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(148, 51);
+            button2.Name = "button2";
+            button2.Size = new Size(81, 43);
+            button2.TabIndex = 0;
+            button2.Text = "Dosyalari Donustur";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(27, 25);
+            label1.Name = "label1";
+            label1.Size = new Size(39, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Step 1";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(148, 25);
+            label2.Name = "label2";
+            label2.Size = new Size(39, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Step 2";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(252, 123);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form1";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Srt Formatter";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
+        private Button button2;
+        private Label label1;
+        private Label label2;
     }
 }
